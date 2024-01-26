@@ -3,10 +3,15 @@ package main
 import "fmt"
 
 func main() {
+	isPalindrome := palindrome("abba")
+	fmt.Println("1. Is palindrome", isPalindrome)
 	res := max([]int{1, 10, 12, 20, 5})
-	fmt.Println(res)
+	fmt.Println("2. Max: ", res)
 
+	fmt.Print("3. Steps")
 	step(5)
+	f := factorial(8)
+	fmt.Println("4. Fatorial", f)
 }
 
 // palindrome
